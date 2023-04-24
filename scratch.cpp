@@ -1,5 +1,6 @@
 #include <chrono>
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
@@ -15,5 +16,21 @@ int main(int argc, char *argv[])
   std::time_t tomorrow_time = std::chrono::system_clock::to_time_t(tomorrow);
 
   std::cout << std::ctime(&tomorrow_time) << std::endl;
+
+
+  string s { "Lets see if we can remove spaces" };
+
+
+  auto it = remove_if(begin(s), end(s), [=](auto x) { return x == ' '; } );
+
+  cout << s << endl;
+
+
+  s.erase(it, end(s));
+
+  cout << "After " << s << endl;
+
+
+  
   return 0;
 }
