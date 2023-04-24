@@ -1,0 +1,15 @@
+BasedOnStyle: LLVM
+IndentWidth: 2
+UseTab: Never
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+IndentCaseLabels: true
+ColumnLimit: 100
+AccessModifierOffset: -2
+BreakBeforeBraces: Allman
+DerivePointerAlignment: true
+PointerAlignment: Left
+AlignConsecutiveDeclarations: true
+
+
+
